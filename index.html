@@ -11,9 +11,7 @@
         <div>
             <button onclick="getNumber()">Start!</button>
         </div>
-        <div class="output">
-
-        </div>
+        <div id="output"></div>
         <script>
             function getNumber() {
                 let finalStr = ''
@@ -30,7 +28,7 @@
                         finalStr = finalStr + i + ', '
                     }
                 }
-                alert(finalStr)
+                document.getElementById('output').innerHTML = finalStr
             }
         </script>
     </div>
