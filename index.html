@@ -16,19 +16,21 @@
         </div>
         <script>
             function getNumber() {
+                let finalStr = ''
                 let inputNumber = parseInt(prompt(`Enter a number`, ` `))
                 
                 for (let i = 1; i <= inputNumber; i++) {
                     if (i % 15 ===0) {
-                        console.log(`FizzBuzz`)
+                        finalStr = finalStr + `FizzBuzz, `
                     } else if (i % 3 === 0) {
-                        console.log(`Fizz`)
+                        finalStr = finalStr + `Fizz, `
                     } else if (i % 5 === 0) {
-                        console.log(`Buzz`)
+                        finalStr = finalStr + `Buzz, `
                     } else {
-                    console.log(i)
+                        finalStr = finalStr + i + ', '
                     }
                 }
+                alert(finalStr)
             }
         </script>
     </div>
